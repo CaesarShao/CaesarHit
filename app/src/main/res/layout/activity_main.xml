@@ -56,7 +56,7 @@
 
     <Button
         android:id="@+id/btn9"
-        android:text="其他用法"
+        android:text="其他类中的用法"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

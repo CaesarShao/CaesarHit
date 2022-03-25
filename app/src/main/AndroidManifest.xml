@@ -27,6 +27,11 @@
         </activity>
 
         <service android:name=".normal.MyService" />
+        <receiver android:name=".normal.MyBroadReceiver">
+            <intent-filter>
+                <action android:name="com.caesar.hit.normal.broad"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

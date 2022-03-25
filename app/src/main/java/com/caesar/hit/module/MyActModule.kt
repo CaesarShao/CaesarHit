@@ -2,7 +2,7 @@ package com.caesar.hit.module
 
 import com.caesar.hit.beans.OtherBean
 import com.caesar.hit.beans.SimpleGlobalData
-import com.caesar.hit.beans.UserNameBean
+import com.caesar.hit.beans.UserNameGlobalBean
 import com.caesar.hit.utils.CaesarHitLog
 import dagger.Module
 import dagger.Provides
@@ -27,14 +27,14 @@ class MyActModule {
 
     @Named("name1")
     @Provides
-    fun providerUserName1(): UserNameBean {
-        return  UserNameBean("111")
+    fun providerUserName1(): UserNameGlobalBean {
+        return  UserNameGlobalBean("111")
     }
 
     @Named("name2")
     @Provides
-    fun providerUserName2(): UserNameBean {
-        return  UserNameBean("222")
+    fun providerUserName2(): UserNameGlobalBean {
+        return  UserNameGlobalBean("222")
     }
 
     @Provides

@@ -1,6 +1,7 @@
 package com.caesar.hit.normal
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -19,7 +20,10 @@ class OtherActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_two)
-        findViewById<Button>(R.id.btn_show).setOnClickListener {
+        findViewById<Button>(R.id.btn1).setOnClickListener {
+            val intent = Intent()
+            intent.setAction("com.caesar.hit.normal.broad")
+            this.sendBroadcast(intent)
         }
     }
 

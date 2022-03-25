@@ -8,7 +8,7 @@ import javax.inject.Inject
  * Created by Caesar
  * email : caesarshao@163.com
  */
-class UserNameBean constructor(val name: String) {
+class UserNameGlobalBean constructor(val name: String) {
 
     init {
         CaesarHitLog.I("UserNameBean构造了")
